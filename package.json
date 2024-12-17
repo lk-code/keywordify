@@ -4,6 +4,7 @@
     "description": "A plugin to generate keyword combinations from multiple string arrays.",
     "main": "index.js",
     "scripts": {
+        "build": "echo 'No build step required'",
         "test": "jest"
     },
     "keywords": [

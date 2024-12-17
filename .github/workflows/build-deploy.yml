@@ -26,6 +26,11 @@ jobs:
     - name: Build package
       run: npm run build
 
+    - name: Publish to npm
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      run: npm publish
+
     - name: Create and push git tag
       env:
         TAG_NAME: v$(node -p "require('./package.json').version")
@@ -34,8 +39,3 @@ jobs:
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git tag $TAG_NAME
         git push origin $TAG_NAME
-
-    - name: Publish to npm
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      run: npm publish
