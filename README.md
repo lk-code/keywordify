@@ -22,4 +22,12 @@ const keywords = generateKeywords(
   ["My Website Name"]
 );
 
-// keywords contains "Shop Programmer City ABC My Website Name", ... , "App Development City DEF My Website Name", ...
+/**
+ * keywords contains
+ * 
+ * "Shop Programmer City ABC My Website Name"
+ * ... 
+ * "App Development City DEF My Website Name"
+ * ...
+ */
+```
