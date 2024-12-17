@@ -1,0 +1,1 @@
+export function generateKeywords(...arrays: string[][]): string[];
