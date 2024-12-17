@@ -2,6 +2,7 @@
     "name": "keywordify",
     "version": "1.0.0",
     "description": "A plugin to generate keyword combinations from multiple string arrays.",
+	"repository": "https://github.com/lk-code/keywordify",
     "main": "index.js",
     "scripts": {
         "build": "echo 'No build step required'",
